@@ -1,0 +1,38 @@
+.sticky-note {
+    background-color: #5f6a26;
+    height: 170px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.box {
+    background-color: rgba(240, 248, 255, 0.278);
+    margin: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+}
+
+.btn-add {
+    background-color: #5f6a26;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    outline: none;
+    width: 100px;
+}
+
+.task {
+    text-wrap: wrap !important;
+}
+
+i {
+    cursor: pointer;
+}

@@ -1,0 +1,90 @@
+<!-- <section class="py-5 box">
+  <p class="text-center h1 py-5 text-white">ToDO List📝</p>
+  <div class="container">
+    <div class="row justify-content-center align-items-center d-flex">
+      <div class="col-sm-8">
+        <input
+          placeholder="New Task"
+          [(ngModel)]="newTask"
+          class="form-control w-100 py-2"
+        />
+      </div>
+      <div class="col-sm-2">
+        <button class="btn-add" (click)="addTask()">Add task</button>
+      </div>
+    </div>
+    <div class="row py-3 justify-content-center align-items-center d-flex">
+      <div class="col-sm-11 d-flex flex-warp">
+        <div
+          class="sticky-note d-flex justify-content-between col-2 flex-warp"
+          *ngFor="let task of tasks; let i = index"
+        >
+          <p class="h4 text-start text-white">{{ task }}</p>
+          <div class="d-flex align-items-end justify-content-end gap-2">
+            <i
+              class="pi pi-pen-to-square fs-4"
+              style="color: white"
+              (click)="EditTask(i, newTask)"
+            ></i>
+            <i
+              class="pi pi-trash fs-4"
+              style="color: red"
+              (click)="RemoveTask(i)"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<section class="box">
+  <p class="text-center h1 py-5 text-white">ToDO List📝</p>
+  <div class="container">
+    <div class="row justify-content-center align-items-center d-flex">
+      <div class="col-sm-8">
+        <input
+          placeholder="New Task"
+          [(ngModel)]="newTask"
+          class="form-control w-100 py-2"
+        />
+      </div>
+      <div class="col-sm-2">
+        <button class="btn-add" (click)="addTask()">Add task</button>
+      </div>
+      <div class="container">
+        <div class="row py-3 justify-content-center align-items-center d-flex">
+          <div class="col-sm-11 d-flex flex-wrap">
+            <div
+              class="col-md-3 mb-3 gap-3"
+              *ngFor="let task of tasks; let i = index"
+            >
+              <div
+                class="sticky-note d-flex justify-content-between flex-column"
+              >
+                <p
+                  class="h4 text-start text-white task"
+                  style="word-wrap: break-word"
+                >
+                  {{ task }}
+                </p>
+                <div class="d-flex align-items-end justify-content-end gap-2">
+                  <i
+                    class="pi pi-pen-to-square fs-4"
+                    style="color: white"
+                    (click)="EditTask(i, newTask)"
+                  ></i>
+                  <i
+                    class="pi pi-trash fs-4"
+                    style="color: red"
+                    (click)="RemoveTask(i)"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
